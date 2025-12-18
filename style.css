@@ -808,7 +808,65 @@ body {
     margin-top: 1rem;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive - Desktop Large (1200px+) ===== */
+@media (min-width: 1200px) {
+    .hero-content {
+        gap: 6rem;
+    }
+
+    .avatar-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .avatar {
+        width: 300px;
+        height: 300px;
+    }
+
+    .avatar-ring {
+        width: 380px;
+        height: 380px;
+    }
+
+    .section-container {
+        max-width: 1400px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .about-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* ===== Responsive - Tablet (768px - 1199px) ===== */
+@media (max-width: 1199px) and (min-width: 769px) {
+    .hero-content {
+        gap: 3rem;
+    }
+
+    .avatar-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .avatar {
+        width: 230px;
+        height: 230px;
+    }
+
+    .avatar-ring {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* ===== Responsive - Mobile (768px and below) ===== */
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -818,14 +876,20 @@ body {
         display: flex;
     }
 
+    .hero {
+        padding: 5rem 1.5rem 2rem;
+        min-height: auto;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 2rem;
     }
 
     .hero-visual {
         order: -1;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .avatar-container {
@@ -857,11 +921,284 @@ body {
         justify-content: center;
     }
 
+    .greeting .text {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+
+    .glitch {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    .typewriter {
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+
+    .hero-bio {
+        font-size: 1rem;
+    }
+
     .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
         justify-content: center;
     }
 
     .hero-social {
         justify-content: center;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* About Section Mobile */
+    .about {
+        padding: 4rem 1rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    /* Skills Section Mobile */
+    .skills {
+        padding: 4rem 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    /* Contact Section Mobile */
+    .contact {
+        padding: 4rem 1rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    /* Section Headers Mobile */
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .section-tag {
+        font-size: 0.8rem;
+    }
+
+    /* Footer Mobile */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+
+    /* Glass Card Mobile */
+    .glass-card {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+}
+
+/* ===== Responsive - Small Mobile (480px and below) ===== */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 4.5rem 1rem 1.5rem;
+    }
+
+    .avatar-container {
+        width: 160px;
+        height: 160px;
+    }
+
+    .avatar {
+        width: 140px;
+        height: 140px;
+    }
+
+    .avatar-ring {
+        width: 180px;
+        height: 180px;
+    }
+
+    .avatar-placeholder {
+        font-size: 2.5rem;
+    }
+
+    .float-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .glitch {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        line-height: 1.3;
+    }
+
+    .typewriter {
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-bio {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    /* Cards Extra Small */
+    .about-card,
+    .skill-card {
+        padding: 1.2rem;
+    }
+
+    .card-icon,
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-card h3,
+    .skill-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .university {
+        font-size: 1rem;
+    }
+
+    .semester-badge {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    /* Contact Extra Small */
+    .contact-card {
+        padding: 1.2rem;
+    }
+
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .contact-label {
+        font-size: 0.8rem;
+    }
+
+    .contact-value {
+        font-size: 1rem;
+    }
+}
+
+/* ===== Responsive - Extra Small Mobile (360px and below) ===== */
+@media (max-width: 360px) {
+    .glitch {
+        font-size: 1.1rem;
+    }
+
+    .greeting .text {
+        font-size: 0.7rem;
+    }
+
+    .typewriter {
+        font-size: 0.9rem;
+    }
+
+    .avatar-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .avatar-ring {
+        width: 160px;
+        height: 160px;
+    }
+
+    .float-icon {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
     }
 }
