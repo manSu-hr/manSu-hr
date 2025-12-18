@@ -737,6 +737,10 @@ body {
     background: linear-gradient(135deg, #333, #6e5494);
 }
 
+.contact-icon.tiktok {
+    background: linear-gradient(135deg, #00f2ea, #ff0050);
+}
+
 .contact-details {
     flex: 1;
 }
