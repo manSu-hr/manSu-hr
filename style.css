@@ -1203,7 +1203,9 @@ body {
     }
 
     .float-icon {
-        display: none;
+        width: 25px;
+        height: 25px;
+        font-size: 0.75rem;
     }
 
     .section-title {
