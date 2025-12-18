@@ -465,7 +465,7 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 20%;
 }
 
 .floating-icons {
